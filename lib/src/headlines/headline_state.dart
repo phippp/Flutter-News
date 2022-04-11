@@ -17,7 +17,7 @@ class HeadlineState extends State<HeadlineListView> {
   }
 
   Future<List<HeadlineItem>> fetchNews() async {
-    final response = await http.get(Uri.parse('https://jsonplaceholder.typicode.com/albums'));
+    final response = await http.get(Uri.parse('https://mockend.com/phippp/Flutter-News/News'));
     if (response.statusCode == 200) {
       final json = jsonDecode(response.body);
       return List<HeadlineItem>.from(json.map((x) => HeadlineItem.fromJson(x)));
