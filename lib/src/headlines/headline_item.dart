@@ -5,13 +5,15 @@ class HeadlineItem {
   final String? description;
   final String? content;
   final String? publishedAt;
+  final String? image;
   
   const HeadlineItem({
     this.author,
     required this.title,
     this.description,
     this.content,
-    this.publishedAt
+    this.publishedAt,
+    this.image
   });
 
   factory HeadlineItem.fromJson(Map<String, dynamic> json) {
@@ -21,6 +23,7 @@ class HeadlineItem {
       description: json['description'],
       content: json['content'],
       publishedAt: json['publishedAt'],
+      image: json['imgToUrl']
     );
   }
 }
