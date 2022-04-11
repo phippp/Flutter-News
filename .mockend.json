@@ -4,21 +4,21 @@
             "string" : {}
         },
         "title": {
-            "loremWords": {
-                "minLength" : 2,
-                "maxLength" : 6
+            "loremSentences": {
+                "minLength" : 10,
+                "maxLength" : 30
             }
         },
         "description" : {
             "loremSentences" : {
-                "minLength" : 5,
-                "maxLength" : 25
+                "minLength" : 20,
+                "maxLength" : 100
             }
         },
         "content" : {
             "loremParagraphs" : {
-                "minLength" : 20,
-                "maxLength" : 150
+                "minLength" : 80,
+                "maxLength" : 350
             }
         },
         "publishedAt" : {
