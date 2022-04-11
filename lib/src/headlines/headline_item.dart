@@ -23,7 +23,7 @@ class HeadlineItem {
       description: json['description'],
       content: json['content'],
       publishedAt: json['publishedAt'],
-      image: json['imgToUrl']
+      image: json['urlToImage']
     );
   }
 }

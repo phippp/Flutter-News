@@ -66,7 +66,7 @@ class HeadlineState extends State<HeadlineListView> {
           } else if(snapshot.hasError){
             return Text("${snapshot.error}");
           }
-          return CircularProgressIndicator();
+          return const CircularProgressIndicator();
         }
       ),
     );
