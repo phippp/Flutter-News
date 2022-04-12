@@ -3,7 +3,6 @@ import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:news_app/src/headlines/headline_list_view.dart';
 
-import 'headlines/headline_item_view.dart';
 import 'settings/settings_controller.dart';
 import 'settings/settings_view.dart';
 
@@ -69,8 +68,6 @@ class MyApp extends StatelessWidget {
                 switch (routeSettings.name) {
                   case SettingsView.routeName:
                     return SettingsView(controller: settingsController);
-                  case HeadlineItemView.routeName:
-                    return const HeadlineItemView();
                   case HeadlineListView.routeName:
                   default:
                     return const HeadlineListView();

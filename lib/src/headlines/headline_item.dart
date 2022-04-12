@@ -1,29 +1,28 @@
-/// A placeholder class that represents an entity or model.
 class HeadlineItem {
   final String? author;
   final String title;
   final String? description;
-  final String? content;
-  final String? publishedAt;
+  final String content;
+  final String publishedAt;
   final String? image;
   
   const HeadlineItem({
     this.author,
     required this.title,
     this.description,
-    this.content,
-    this.publishedAt,
+    required this.content,
+    required this.publishedAt,
     this.image
   });
 
   factory HeadlineItem.fromJson(Map<String, dynamic> json) {
     return HeadlineItem(
-      author: json['author'],
+      author: json['author'] ?? null,
       title: json['title'],
-      description: json['description'],
-      content: json['content'],
+      description: json['description'] ?? null,
+      content: json['content'] ?? json["url"],
       publishedAt: json['publishedAt'],
-      image: json['urlToImage']
+      image: json['urlToImage'] ?? null
     );
   }
 }
